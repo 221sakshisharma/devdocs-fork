@@ -21,4 +21,4 @@ RUN thor docs:download --all && \
     rm -rf /tmp
 
 EXPOSE 9292
-CMD rackup -o 0.0.0.0
+CMD ["rackup", "--host", "0.0.0.0", "--port", "9292"]
